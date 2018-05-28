@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game"
+    android:orientation="vertical"
+    tools:context="com.wit.gamesV5_1.MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/hello_world"
+            android:textColor="#DAA520"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="@string/textView_score"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_scoreNum"
+            android:layout_width="-60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/textView_initScore"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="@string/textView_bestScore"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_bestScoreNum"
+            android:layout_width="-80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="@string/textView_initScore"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_restart"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/game_button"
+            android:text="@string/button_restart"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/button_restart"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/button_restart"
+            android:background="@drawable/game_button"
+            android:text="@string/button_back"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_forward"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/button_restart"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/button_restart"
+            android:background="@drawable/game_button"
+            android:text="@string/button_forward"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <GridLayout
+            android:id="@+id/grids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </GridLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_flowerNumLabel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/textView_flower"
+            android:textColor="#ff6666"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textView_flowerNum"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="0"
+            android:textColor="#ff6666"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/textView_author"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</LinearLayout>

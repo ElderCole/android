@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_explain"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="游戏说明"
+        android:textColor="#555555"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="　　1.上下左右滑动屏幕，所有数字会往一端靠拢。\n　　2.数字在靠拢过程中，遇到相同数字会合并。\n　　3.游戏合成一个大于或者等于256的数会获得一朵鲜花。\n　　4.鲜花可以用来撤销，每次撤销会消耗一朵鲜花。\n　　5.同时合成两个或两个以上大于或等于256的数只会获得一朵鲜花。\n　　6.前进不会消耗鲜花。"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+</LinearLayout>
